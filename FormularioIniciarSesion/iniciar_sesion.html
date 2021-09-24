@@ -1,0 +1,28 @@
+<!DOCTYPE html lang="es">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Iniciar sesión</title>
+    </head>
+    <body>
+        <form action="iniciar_sesion.html" method="POST">
+            <strong><h3>Iniciar sesión</h3></strong>
+            <p>
+                <label for="login">Usuario:</label>
+                <input type="text" name="login" id="login" size="50" required>
+            </p>
+            <p>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" size="50" required>
+            </p> 
+            <p>
+                <input type="checkbox" name="sesión" value="sesion_on">Mantener la sesión iniciada <br>
+            </p>
+            <p>
+                <a href="recuperar_usuario.html">Recuperar usuario y/o contraseña</a>
+            </p>
+            <p>
+                <input type="submit" value="Iniciar sesión">
+            </p>
+        </form>
+    </body>

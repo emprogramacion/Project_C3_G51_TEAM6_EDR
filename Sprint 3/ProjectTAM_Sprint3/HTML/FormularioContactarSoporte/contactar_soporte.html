@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Contactar soporte</title>
+        <link rel="stylesheet" href="../../CSS/contacto.css">
+    </head>
+    <body>
+            <header>
+                <div class="Titulo">
+                    <h1 class="titulo">
+                        <img src="../../Imagenes/LogoTAM.svg" alt="Logo">Tam Database
+                    </h1>
+                    <h3 class="subtitulo">
+                        La Base de Datos de Malaria Aviar Trópical 
+                    </h3>
+                </div>
+            </header>
+            <nav class="MenuWrap">
+                <div class="menu-item">
+                    <a href="../FormularioIniciarSesion/iniciar_sesion.html" class="ListItem">Cerrar sesión</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../FormularioContactarSoporte/contactar_soporte.html" class="ListItem">Contáctanos</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../FormularioInformes/informes.html" class="ListItem">Consultas</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../FormularioIngresoDatos/IngresoDatos.html" class="ListItem">Ingresa tus datos</a>
+                </div>        
+            </nav>
+
+            <div class="main">
+            
+            <section class="section">
+            <div>
+                <form action="#" method="POST">
+                    <strong>
+                        <h3>ENVÍA TU SOLICITUD</h3>
+                    </strong> 
+                <div class="lbl">
+                    <label for="nombre">Nombre completo:
+                    <input type="text" name="nombre" id="nombre" size="50" required>
+                    </label>
+                    <label for="doc">N° documento de identificación:
+                    <input type="number" name="doc" id="doc" size="50" required min=1>
+                    </label>
+                    <label for="email">Correo Electrónico:
+                    <input type="email" name="email" id="email" size="50" required>
+                    </label>
+                    <label for="desc">Descripción de la solicitud:
+                    <textarea name="desc" cols="52" rows="10" required></textarea>
+                    </label>
+                </div>
+                    <br>
+                    <button type="submit"><b>Enviar solicitud</b></button>
+                </form>
+                </div>
+            </section>
+            </div>
+            
+            <footer class="grid-container">
+                <div class="item">
+                    Editores: Diana Gil-Vargas, Erasmo Martinez, Ricardo Ortega & Luis Ruiz<br>
+                    ©2021. All Rights Reserved
+                </div>
+            </footer>
+        
+    </body>
+</html>

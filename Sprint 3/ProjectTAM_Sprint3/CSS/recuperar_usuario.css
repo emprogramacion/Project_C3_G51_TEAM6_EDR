@@ -1,0 +1,207 @@
+/*Estilo general de atributos de la página*/
+* {
+    font-family: Quicksand;
+    font-size: 25px;
+    color: indigo;
+  }
+/*Estilo de titulo e imagen*/
+  .titulo {
+    background-color: rgba(35, 0, 130, 0.452);
+    color: #ebebeb;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.6em;
+  }
+  
+  .titulo img {
+    height: 180px;
+  }
+/*Estilo subtitulo*/
+  .subtitulo {
+    margin-top: -80px;
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7em;
+  }
+ /*Estilo de la barra de navegación nav(barra de menús)*/
+  .MenuWrap {
+    background-color: indigo;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .menu-item{
+    border-left: #ebebeb solid;
+    padding: 0.5em;
+  }
+  
+  .ListItem,
+  .LastItem {
+    color: #ebebeb;
+    text-decoration: none;
+  }
+  .ListItem {
+    margin-right: 1rem;
+  }
+  .LastItem {
+    margin-right: auto;
+  }
+  /*Sombrear de amarillo las opciones de nav (barra de menús)*/
+  a:hover{
+    color: rgb(226, 238, 55);
+  }
+  /*Estilo del body (fondo de la página)*/
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right,  #69af9d83, #fffffd8c);
+    text-align: justify;
+  }
+/*Estilo para el mensaje Identifica la cuenta afectada del h3*/
+  .msje_inicia_sesion h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: indigo;
+  }
+
+  /*Estilo para el label email asociado a la cuenta*/
+  .lbl label {
+    padding-top: 1em ;
+    font-size: 20px;
+    color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*Estilo para el div .lbl*/
+    .lbl{
+    padding-top: 1em ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1em;
+  }
+  /*Estilo del main (contenedor)*/
+  .recuperar_usuario {
+    display: flex;
+    flex-direction: column; /*Mostrar el diseño sin esto*/
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 5em;
+}
+/*Estilo del formulario recuperar usuario*/
+#formulario_recuperar_usuario {
+    border-radius: 6px;
+    border: indigo solid;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(35, 0, 130, 0.178);
+}
+/*Estilo del link contactar soporte*/
+#enlace a{
+    font-size: 15px;
+    color: rgba(35, 0, 130, 0.452);
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Estilo del div enlace para central dicho link*/
+#enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+/*Sombrear de amarillo el link contactar soporte*/
+#enlace a:hover{
+    color: rgb(226, 238, 55);
+}
+#email{
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    padding-right: 2em;
+    color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Estilos botones*/
+#button {
+    background-color: indigo;
+    border: 1px indigo solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+  }
+  
+  #button2 {
+    background-color: rgba(35, 0, 130, 0.452);
+    border: 1px rgba(35, 0, 130, 0.452) solid;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1em;
+    color: white;
+    font-weight: bold;
+  }
+  /*Sombrear el botón principal*/
+  #button:hover{
+    background-color: rgba(35, 0, 130, 0.452);
+  }
+  /*Sombrear el botón principal*/
+  #button2:hover{
+    background-color: rgba(122, 103, 173, 0.452);
+  }
+  
+  /*Estilo a la palabra del botón principal*/
+  button b{
+    font-size: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /*Estilo div para ubicar botones*/
+  .ubicar{
+    text-align: center;
+  }
+/*Estilo del pié de página(footer)*/
+  .grid-container {
+    background-color: rgba(35, 0, 130, 0.178);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 60px;
+    border: solid;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: indigo;
+    margin: 0.5em;
+    margin-bottom: 0;
+    padding: 1em;
+    align-items: center;
+  }
+  
+  .item { 
+    grid-area: footer; 
+    font-size: 15px;
+  }

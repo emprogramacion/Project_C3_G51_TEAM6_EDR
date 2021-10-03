@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>REGISTRATE</h1>
+        </header>
+        <hr>
+        <div>
+            <p><strong>Ingrese los siguientes datos para registrarse</strong></p>
+        </div>
+        <section>
+            <form action="" method="POST">
+                <div class="formulario">
+                    <div class="campos">
+                        <input class="inputs" type="text" placeholder="Nombres"  size="30" minlength="3" maxlength="30" required> 
+                    </div>
+                    <div class="campos"> 
+                        <input class="inputs" type="text" placeholder="Apellidos" size="30" minlength="3" maxlength="30" required> 
+                    </div>
+                    <div class="campos"> 
+                        <input class="inputs" type="email" placeholder="Correo electrónico" size="30" required> 
+                    </div>
+                    <div class="campos"> 
+                        <input class="inputs" type="text" placeholder="Usuario" size="30" minlength="5" maxlength="20" required pattern="[.A-Za-z0-9]+"> 
+                    </div>
+                    <div class="campos"> 
+                        <input class="inputs" type="password" placeholder="Contraseña" size="30" minlength="5" maxlength="20" required pattern="[.A-Za-z0-9]+"> 
+                    </div>
+                </div>
+                    <div class="campos">
+                        <input type="submit" id="boton-cuenta" value="Crear cuenta">
+                    </div>
+                    <!--   <dialog id="ms">
+                            <p>¡Registro exitoso!</p>
+                            <input type="submit" value="Ok" id="close" onclick="document.getElementById('ms').close()">
+                        </dialog>
+                        <input type="submit" value="Crear cuenta" id="show" onclick="document.getElementById('ms').show()">                    
+                     -->   
+            </form>
+        </section>
+    </div>   
+</body>
+</html>

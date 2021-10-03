@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5em;
+    margin: 0.5em auto;
+    text-align: center;
+    background: linear-gradient(to bottom right,  #69af9d83, #fffffd8c);
+}
+
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(35, 0, 130, 0.178);
+    border: indigo solid;
+    border-radius: 6px;
+    width: fit-content;
+    margin: auto;
+    padding: 1.2em;
+}
+
+h1,p{
+    color: indigo;
+}
+
+.formulario{
+    text-align: left;
+    padding: 10px;
+}
+
+.inputs{
+    padding: 0.5em;
+    font-size: 1.2em;
+    padding-right: 2em;
+    color: indigo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.campos{
+    padding-top: 1em;
+}
+
+#boton-cuenta{
+    background-color: indigo;
+    border: 1px indigo solid;
+    border-radius: 1em;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#boton-cuenta:hover{
+    background-color: rgba(35, 0, 130, 0.452);
+}
+/*
+#ms{
+    border: 1px solid #999;
+    border-radius: 6px;
+} */

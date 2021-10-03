@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/ingreso_datos.css">
+    <title>TAM DATABASE</title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">
+               <img src="../../Imagenes/LogoTAM.svg" alt="Logo"> Tam Database
+            </h1>
+            <h3 class="subtitulo">
+                La Base de Datos de Malaria Aviar Trópical 
+            </h3>
+        </div>
+    </header>
+    <nav class="MenuWrap">
+        <div class="menu-item">
+            <a href="../FormularioIniciarSesion/iniciar_sesion.html" class="ListItem">Cerrar sesión</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioContactarSoporte/contactar_soporte.html" class="ListItem">Contáctanos</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioInformes/informes.html" class="ListItem">Consultas</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioIngresoDatos/IngresoDatos.html" class="ListItem">Ingresa tus datos</a>
+        </div>        
+    </nav>
+    <main>
+            <p class="parrafo">
+                Para importar los datos a la plataforma tendrá dos opciones:</p>
+            <p class="parrafo">
+                En la <b>opción 1</b> para 10 registros o menos usted podrá ingresar
+                los datos manualmente y en la <b>opción 2</b>, para registros mayores
+                a 10 o masivos se recomienda el uso de un archivo en formato .xlsx
+            </p>
+    </main>
+
+    <form action="IngresoDatos.html" method="POST">
+        <div class="grid-container1">
+            <div class="grid-item">
+                <h2>OPCIÓN 1:Ingrese datos manualmente</h2>
+            </div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item">
+                <h3>Información Geográfica</h3>
+            </div>
+            <div class="grid-item">
+                <h3>Información Taxonómica del Ave Hospedera</h3>
+            </div>
+
+            <div class="grid-item">
+                <label for="latitud"> Latitud (decimal):*</label>
+                <input type="text" size="35" name="latitud" required>
+            </div>
+            <div class="grid-item">
+                <label for="orden"> Orden:*</label>
+                <input type="text" size="35" name="orden" required/>
+            </div>
+
+            <div class="grid-item">
+                <label for="longitud"> Longitud (decimal):*</label>
+               <input type="text" size="35" name="longitud" required>
+            </div>
+            <div class="grid-item">
+                <label for="familia" > Familia:</label>
+                <input type="text" size="35" name="familia"/>
+            </div>
+
+            <div class="grid-item">
+                <label for="pais" > País:*</label>
+                <input type="text" size="35" name="pais" required/>
+            </div>
+            <div class="grid-item">
+                <label for="especie" > Especie:*</label>
+                <input type="text" size="35" name="especie" required/>
+            </div>
+
+            <div class="grid-item">
+                <label for="localidad"> Localidad:</label>
+                <input type="text" size="35" name="localidad"/>
+            </div>
+            <div class="grid-item">
+                <h3>Información Taxonómica del Parásito</h3>
+            </div>
+
+            <div class="grid-item">
+                <label for="elevacion"> Elevación (mts):</label>
+                <input type="text" size="35" name="elevacion"/>
+            </div>
+            <div class="grid-item">
+                <label for="genero"> Género:*</label>
+                <input type="text" size="35" name="genero" required/>
+            </div>
+
+            <div class="grid-item">
+                <h3>Información Genética</h3>
+            </div>
+            <div class="grid-item">
+                <h3>Información Bibliográfica</h3>
+            </div>
+
+            <div class="grid-item">
+                <label for="codigo genbank"> Código Genbank:*</label>
+                <input type="text" size="35" name="Codigo Genbank" required/>
+            </div>
+            <div class="grid-item">
+                <p>Si ha realizado una publicación ingrese la cita bibliográfica
+                    (Ej: Gil-Vargas et al., 2020), de lo contrario ingrese NA
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <label for="marcador molecular"> Marcador Molecular:*</label>
+                <input type="text" size="35" name="marcador molecular" required/>
+            </div>
+            <div class="grid-item">
+                <label for="referencia"> Referencia:*</label>
+                <input type="text" size="35" name="referencia" required/>
+            </div>
+
+            <div class="grid-item">
+                <label for="text">*Campos requeridos</label>
+            </div>
+            <div class="grid-item">
+                <button class="button formbutt" type="submit">Ingresar Datos</button>
+            </div>                        
+        </div>
+    </form>
+
+    <form action="" method="POST">
+        <div class="grid-container2">
+            <div class="grid-item">
+                <hgroup>
+                    <h2>OPCIÓN 2:Cargue datos con la hoja de cálculo
+                        en TAM DATABASE</h2>
+                </hgroup>
+                <p>
+                    Esta opción es recomendada para importar grandes volúmenes de datos. 
+                    Por lo tanto, esta opción tiene requisitos específicos
+                    para el archivo: el tipo de archivo debe ser un .xlsx y se 
+                    deberá eliminar la primera fila de este archivo antes de 
+                    subir sus datos, pues está fila de encabezado solo sirve 
+                    como una guía para la organización de sus datos.
+                </p>
+                <a href="./EjemploFormularioDatos.xlsx">Puede descargar el ejemplo del archivo .xlsx dando click aquí</a>
+
+                <h3>Importe un archivo</h3>
+
+                <p>
+                    Escoja un archivo para importar
+                </p>
+                <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
+                    <input type="file" id="ArchivoDatos" class="input-file" 
+                    accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    value="">
+                    Selecciona archivo
+                </div>
+                <!--<p>
+                    <button class="button2 formbutt" type="reset">Cancelar</button>
+                </p>-->
+                <p>
+                    <button class="button formbutt" type="submit">Enviar archivo</button>
+                </p>
+            </div>
+        </div>
+    </form>
+
+    <div class="grid-container3">
+            <div class="item">
+                Editores: Diana Gil-Vargas, Erasmo Martinez, Ricardo Ortega  & Luis Ruiz<br>
+                ©2021. All Rights Reserved
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html lang="es">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../CSS/iniciar_sesion.css" rel="stylesheet">
+        <title>Iniciar Sesión - TAM DATABASE</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 class="titulo">
+                   <img src="../../Imagenes/LogoTAM.svg" alt="Logo"> Tam Database
+                </h1>
+                <h3 class="subtitulo">
+                    La Base de Datos de Malaria Aviar Trópical 
+                </h3>
+            </div>
+        </header>
+        <nav class="MenuWrap">
+            <div class="menu-item">
+                <a href="../FormularioContactarSoporte/contactar_soporte.html" class="ListItem">Contáctanos</a>
+            </div>
+            <div class="menu-item">
+                <a href="../FormularioInformes/informes.html" class="ListItem">Consultas</a>
+            </div> 
+        </nav>
+        <main class="iniciar_sesion">
+        <div id="parrafo_descripcion">
+            <div id="descripcion">
+                TAM DATABASE es una plataforma desarrollada para facilitar la compilación, 
+                el almacenamiento y consulta de datos biológicos asociados a muestras de malaria aviar.
+            </div>
+        </div>
+        <section id="formulario_iniciar_sesion">
+            <form action="iniciar_sesion.html" method="POST">
+                <div class="msje_inicia_sesion">
+                    <h3>INICIAR SESION</h3>
+                </div>
+                <hr>
+                <div class="campos"> 
+                    <input class="inputs" type="text" placeholder="Usuario" size="30" minlength="5" maxlength="20" required pattern="[.A-Za-z0-9]+"> 
+                </div>
+                <div class="campos"> 
+                    <input class="inputs" type="password" placeholder="Contraseña" size="30" minlength="5" maxlength="20" required pattern="[.A-Za-z0-9]+"> 
+                </div>
+                
+                <div id="check_div">
+                 <!--  <input type="checkbox" id="ch" name="sesión" value="sesion_on">
+                <label id="lbl" for="ch">Mantener la sesión iniciada<br></label> 
+                
+                Acá con el id=ch , estoy indicando que el label de id="lbl" está asociado 
+                al checkbox con id="ch"
+                -->
+                <label class="checkbox">
+                    <input type="checkbox">Mantener sesion iniciada
+                    <span class="check"></span>
+                </label>
+                </div>
+                <div id="br">
+                    <a href="../FormularioRecuperarUsuario/recuperar_usuario.html" id="link" >Recuperar usuario y/o contraseña</a>
+                </div>
+                <div class="ubicar">
+                    <button type="submit" id="button"  value="Ingresar"><b>Ingresar</b></button>
+                    <a href="../FormularioRegistro/registro.html" id="button2"><label>Registrate</label></a>
+                </div>
+            </form>
+        </section>     
+        </main>
+        <footer class="grid-container">
+            <div class="item">
+                Editores: Diana Gil-Vargas, Erasmo Martinez, Ricardo Ortega & Luis Ruiz<br>
+                ©2021. All Rights Reserved
+            </div>
+        </footer>
+
+    </body>

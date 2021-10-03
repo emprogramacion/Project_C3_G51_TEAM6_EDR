@@ -1,0 +1,219 @@
+* {
+    font-family: Quicksand;
+    font-size: 25px;
+    color: indigo;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right,  #69af9d83, #fffffd8c);
+    text-align: justify;
+}
+
+  .titulo {
+    background-color: rgba(35, 0, 130, 0.452);
+    color: #ebebeb;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.6em;
+}
+
+.titulo img {
+    height: 180px;
+}
+
+.subtitulo {
+    margin-top: -80px;
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7em;
+}
+  
+.MenuWrap {
+  background-color: indigo;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.menu-item{
+    border-left: #ebebeb solid;
+    padding: 0.5em;
+}
+
+.ListItem,
+.LastItem {
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+.ListItem {
+  margin-right: 1rem;
+}
+
+.LastItem {
+  margin-right: auto;
+}
+
+a:hover{
+    color: rgb(226, 238, 55);
+}
+
+.desc-search{
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.boton-search{
+    padding: 1em;
+    padding-left: 2em;
+    padding-bottom: 3em;
+}
+
+#boton-search{
+    background-color: indigo;
+    border: 1px indigo solid;
+    border-radius: 1em;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#boton-search:hover{
+    background-color: rgba(35, 0, 130, 0.452);
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.categoria1{
+    padding: 0;
+    padding-left: 1em;
+    width: 240px;
+}
+
+.categoria2{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 227px;
+}
+
+.categoria3{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 269px;
+}
+
+.categoria4{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 269px;
+}
+
+.check{
+    padding-top: 0.5em;
+}
+
+.categ{
+    font-weight: bold;
+}
+
+hr{
+    padding: 0;
+    margin: initial;
+    border: indigo 1px solid;
+}
+
+#boton{
+    padding: 8px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+table{
+    background-color: rgba(35, 0, 130, 0.178);
+    border: solid;
+    border-collapse: collapse;
+    border-color: indigo;
+    margin: 2em;
+    margin-top: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+th,td{
+    font-size: 20px;
+    width: 200px;
+}
+
+.boton-download{
+    padding: 1em;
+    padding-left: 2em;
+    padding-top: 0;
+    margin-bottom: 5em;
+}
+
+#boton-download{
+    background-color: indigo;
+    border: 1px indigo solid;
+    border-radius: 1em;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#boton-download:hover{
+    background-color: rgba(35, 0, 130, 0.452);
+}
+
+.grid-container {
+    background-color: rgba(35, 0, 130, 0.178);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 60px;
+    border: solid;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: indigo;
+    margin: 0.5em;
+    margin-bottom: 0;
+    padding: 1em;
+    align-items: center;
+  }
+
+.item { 
+    grid-area: footer; 
+    font-size: 15px;
+  }
+
+

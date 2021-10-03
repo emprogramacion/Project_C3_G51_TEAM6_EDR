@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Base de datos de muestras biologicas de malaria aviar tropical">
+    <meta name="keywords" content="muestras biologicas, malaria aviar tropical, base de datos">
+    <link rel="stylesheet" href="../../CSS/informes.css">
+    <title>Consultas en Base de Datos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">
+               <img src="../../Imagenes/LogoTAM.svg" alt="Logo"> Tam Database
+            </h1>
+            <h3 class="subtitulo">
+                La Base de Datos de Malaria Aviar Trópical 
+            </h3>
+        </div>
+    </header>
+    <nav class="MenuWrap">
+        <div class="menu-item">
+            <a href="../FormularioIniciarSesion/iniciar_sesion.html" class="ListItem">Cerrar sesión</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioContactarSoporte/contactar_soporte.html" class="ListItem">Contáctanos</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioInformes/informes.html" class="ListItem">Consultas</a>
+        </div>
+        <div class="menu-item">
+            <a href="../FormularioIngresoDatos/IngresoDatos.html" class="ListItem">Ingresa tus datos</a>
+        </div>        
+    </nav>
+    <main >
+        <div class="desc-search">
+            <p>Realice una busqueda por filtros:</p>
+        </div>    
+        <section >
+            <form class="search" action="" method="POST">
+                <hr>
+                <div class="categoria1"> 
+                    <div>
+                        <label class="categ" for="search">Información Geográfica:</label>
+                    </div>    
+                    <div class="check">           
+                        <label><input type="checkbox" name="" id="longitud">Longitud</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="" id="laitud">Latitud</label>
+                    </div>
+                    <div class="check">    
+                        <label><input type="checkbox" name="" id="pais">País</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="" id="localidad">Localidad</label>
+                    </div>
+                    <div class="check">    
+                        <label><input type="checkbox" name="" id="elevacion">Elevación (mts)</label>
+                    </div>    
+                </div><hr>
+                <div class="categoria2">
+                    <div>
+                        <label class="categ" for="search">Información Genética:</label>           
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="" id="genbank">Codigo Genbank</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="" id="molecular">Marcador Molecular</label>
+                    </div>
+                </div><hr>
+                <div class="categoria3">
+                    <div>
+                        <label class="categ" for="search">Información Taxonómica del Ave Hospedera:</label>           
+                    </div>
+                    <div class="check">    
+                        <label><input type="checkbox" name="" id="orden">Orden</label>
+                    </div>
+                    <div class="check">    
+                        <label><input type="checkbox" name="" id="familia">Familia</label>
+                    </div>
+                    <div class="check">
+                        <label><input type="checkbox" name="" id="especie">Especie</label>
+                    </div>
+                </div><hr>
+                <div class="categoria4">
+                    <div>
+                        <label class="categ" for="search">Información Taxonómica del Parásito:</label>           
+                    </div>
+                    <div class="check">     
+                        <label><input type="checkbox" name="" id="genero">Género</label>
+                    </div>    
+                </div><hr>
+            </form>
+            <div class="boton-search">
+                <input id="boton-search" type="submit" value="Buscar">
+            </div>
+        </section>
+        <section>
+            <div>       
+                <table class="informe" border="1">
+                    <thead>
+                        <tr>
+                            <th>Latitud</th>	
+                            <th>Longitud</th>    
+                            <th>País</th>    	
+                            <th>Localidad</th>    	
+                            <th>Elevación (m)</th>    	
+                            <th>Codigo Genbank</th>    	
+                            <th>Marcador Molecular</th>    	
+                            <th>Orden Ave</th>    	
+                            <th>Familia Ave</th>    	
+                            <th>Especie Ave</th>    	
+                            <th>Género parásito</th>    	
+                            <th>Referencia</th>                   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>-0,599</td>
+                            <td>-77,89</td>
+                            <td>Ecuador</td>
+                            <td>Cerro Bosco</td>
+                            <td>2177</td>
+                            <td>KJ661265</td>
+                            <td>cytb</td>
+                            <td>Passeriformes</td>
+                            <td>Thraupidae</td>
+                            <td>Diglossa cyanea</td>
+                            <td>Haemoproteus sp.</td>
+                            <td>(Harrigan et al., 2014)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="boton-download">
+                <button id="boton-download">Descargar informes</button>
+            </div>
+        </section>
+    </main>
+    <footer class="grid-container">
+        <div class="item">
+            Editores: Diana Gil-Vargas, Erasmo Martinez, Ricardo Ortega & Luis Ruiz<br>
+            ©2021. All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

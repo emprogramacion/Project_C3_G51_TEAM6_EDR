@@ -1,0 +1,217 @@
+* {
+    font-family: Quicksand;
+    font-size: 25px;
+    color: indigo;
+  }
+
+  .titulo {
+    background-color: rgba(35, 0, 130, 0.452);
+    color: #ebebeb;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.6em;
+  }
+
+  .titulo img {
+    height: 180px;
+  }
+
+  .subtitulo {
+    margin-top: -80px;
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7em;
+  }
+
+  .column{
+    padding: 10px;
+    height: 150px;
+  }
+  
+  .MenuWrap {
+    background-color: indigo;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .menu-item{
+    border-left: #ebebeb solid;
+    padding: 0.5em;
+  }
+
+  .ListItem,
+  .LastItem {
+    color: #ebebeb;
+    text-decoration: none;
+  }
+  .ListItem {
+    margin-right: 1rem;
+  }
+  .LastItem {
+    margin-right: auto;
+  }
+
+/*Sombrear de amarillo las opciones de nav (barra de menús)*/
+  a:hover{
+    color: rgb(226, 238, 55);
+  }
+
+  .grid-container1 {
+    background-color: rgba(35, 0, 130, 0.178);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    border: solid;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: indigo;
+    margin: 2em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    padding: 1em;
+    padding-left: 65px;
+    align-items: center;
+  }
+
+.grid-container2 {
+  background-color: rgba(35, 0, 130, 0.178);
+  display: grid;
+  grid-template-columns: auto;
+  border: solid;
+  border-radius: 1em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: indigo;
+  margin: 2em;
+  margin-top: 0;
+  margin-bottom: 6.5em;
+  padding: 1em;
+  padding-left: 100px;
+  align-items: center;
+}
+
+.grid-container3 {
+  background-color: rgba(35, 0, 130, 0.178);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 60px;
+  border: solid;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: indigo;
+  margin: 0.5em;
+  margin-bottom: 0;
+  padding: 1em;
+  align-items: center;
+}
+
+.grid-item label{
+  display: block;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 22px;
+  padding-right: 2em;
+}
+
+.parrafo {
+  padding: 25px;
+  padding-bottom: 0;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right,  #69af9d83, #fffffd8c);
+    text-align: justify;
+  }
+
+.formbutt {
+  background-color: indigo;
+  border-color: indigo;
+  border: 1px indigo solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 1em;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin:4px 2px;
+  cursor:pointer;
+  width: 190px;
+}
+
+
+.formbutt:hover{
+  background-color: rgba(35, 0, 130, 0.178);
+  text-decoration: #44ab5e;
+}
+
+.button2 {
+  background-color: rgba(35, 0, 130, 0.452);
+}
+
+.custom-input-file {
+  background-color: rgba(35, 0, 130, 0.452);
+  border: 1px rgba(35, 0, 130, 0.452) solid;
+  border-radius: 1em;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  min-height: 15px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  width: 163px;
+  display: inline-block;
+ 
+  
+}
+
+.custom-input-file:hover {
+  background-color: rgba(35, 0, 130, 0.178);
+  text-decoration: #44ab5e;
+}
+
+.custom-input-file .input-file {
+ border: 10000px solid transparent;
+ cursor: pointer;
+ font-size: 10000px;
+ margin: 0;
+ opacity: 0;
+ outline: 0 none;
+ padding: 0;
+ position: absolute;
+ right: -1000px;
+ top: -1000px;
+}
+
+.item { 
+  grid-area: footer; 
+  font-size: 15px;
+}

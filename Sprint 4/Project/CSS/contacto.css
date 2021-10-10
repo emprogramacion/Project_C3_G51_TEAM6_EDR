@@ -1,0 +1,217 @@
+* {
+    font-family: Quicksand;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.842);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: linear-gradient(to bottom right,  #69af9d83, #fffffd8c);
+    text-align: justify;
+  }
+  
+  .f-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header,
+  footer{
+    background-color: rgba(35, 0, 130, 0.452);
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: space-around; /*or space-between*/
+  }
+  
+  
+  /* fixed header and footer with scrollable main section */
+  .fixed-hf .main{
+    overflow-y: auto;
+  }
+  
+  .Titulo{  
+    width: 100%; 
+    height: auto;
+  }
+
+  .main{  
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .titulo {
+    color: #ebebeb;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.6em;
+  }
+  
+  .titulo img {
+    height: 180px;
+  }
+  
+  .subtitulo {
+    margin-top: -80px;
+    color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7em;
+  }
+  
+  .MenuWrap {
+    background-color: indigo;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .menu-item{
+    border-left: #ebebeb solid;
+    padding: 0.5em;
+  }
+  
+  .ListItem {
+    margin-right: 1rem;
+  }
+
+  .ListItem,
+  .LastItem {
+    color: #ebebeb;
+    text-decoration: none;
+  }
+
+  a:hover{
+      color: rgb(226, 238, 55);
+  }
+  
+  input{
+    text-align: left;
+    background-color: #fbfbfb; 
+    width: 90%; 
+    height: 40px; 
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: indigo; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+
+  .lbl label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: indigo;
+  }
+
+  .lbl input,textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: indigo;
+    font-size: 20px;
+  }
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 90%; 
+    height: 150px; 
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: indigo; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  label{
+    display: block; 
+    float: center; 
+    padding: 1px; 
+    margin: 1px; 
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  button{
+    height: 45px; 
+    padding-top: -150px; 
+    padding: auto;
+    background-color: indigo; 
+    border: 1px indigo solid;
+    border-radius: 15px;  
+    width: 190px;    
+    cursor: pointer;    
+  }
+
+
+  button:hover{
+    background-color: rgba(35, 0, 130, 0.178);
+  }
+  button b{
+    font-size: 15px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  }
+
+  .section{
+    background-color: rgba(35, 0, 130, 0.178);
+    border: solid;
+    border-radius: 6px;
+    border-color: indigo;
+    text-align: center;
+    width: 90%;
+    max-width: 35%;
+    margin: 3em auto;
+    margin-bottom: 6.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 1em;
+  }
+
+.section div{
+  text-align: center;
+}
+
+.grid-container {
+  background-color: rgba(35, 0, 130, 0.178);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 60px;
+  border: solid;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: indigo;
+  margin: 0.5em;
+  margin-bottom: 0;
+  padding: 1em;
+  align-items: center;
+  
+}
+
+.item { 
+  grid-area: footer; 
+  margin-right: 6.1em;
+  font-size: 15px;
+  color: indigo;
+}
+
+
+strong h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: indigo;
+}

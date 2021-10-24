@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/index.css" rel="stylesheet">
+        <title>Users</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/alertify.min.css" />
+
+    </head>
+    <body>
+      <header>
+        <div>
+            <h1 class="titulo">
+                <img src="Imagenes/LogoTAM.svg" alt="Logo"> Tam Database
+            </h1>
+            <h3 class="subtitulo">
+                La Base de Datos de Malaria Aviar Trópical 
+            </h3>
+        </div>
+    </header>
+    <nav class="MenuWrap">
+        <div class="menu-item">
+            <a class="ListItem">Cerrar Sesión</a>
+        </div>
+        <div class="menu-item">
+            <a class="ListItem" href="index.html">Inicio</a>
+        </div>
+        <div>
+            <div class="dropdown" >
+            <button style="background:indigo;border-color:indigo;box-shadow: none;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Base de Datos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: indigo;min-width: 8.4rem;">
+                <a class="dropdown-item" style="color: white;" href="roles.html">Roles</a>
+              <a class="dropdown-item" style="color: white;" href="usuarios.html">Usuarios</a>
+              <a class="dropdown-item" style="color: white;" href="paises.html">Paises</a>
+              <a class="dropdown-item" style="color: white;" href="parasitos.html">Parasitos</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+        <div class="container mt-4  p-3 mb-5  rounded, contenedor" style="box-shadow: none;margin: 0;">
+            <button id="btnCrear" type="button" class="btn btn-primary">Crear Usuario</button>
+        
+            <table id="users" class="table mt-2 table-bordered table-striped" style="border-color: indigo;width: max-content;">
+              <thead>
+                <tr class="text-center">
+                  <th>ID</th>
+                  <th>NOMBRES</th>
+                  <th>APELLIDOS</th>
+                  <th>EMAIL</th>
+                  <th>CONTRASEÑA</th>
+                  <th>ESTADO</th>
+                  <th>ROL_ID</th>
+                  <th>OPCIONES</th>
+                </tr>
+              </thead>
+              <tbody>
+        
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="modal fade" id="modalUsers" tabindex="-1" aria-labelledby="usersModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h5 class="modal-title" id="exampleModalLabel">Users</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3" style="display: none;">
+                      <label for="id" class="col-form-label">Id Usuario :</label>
+                      <input id="id" type="number" placeholder="Digite el código" class="form-control" id="recipient-name"
+                        required autocomplete="off" oninvalid="setCustomValidity('Digite un Código')"
+                        oninput="setCustomValidity('')">
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="col-form-label">Nombre Usuario :</label>
+                      <input id="name" placeholder="Digite el nombre" type="text" class="form-control" id="recipient-name"
+                        required autocomplete="off" oninvalid="setCustomValidity('Digite un Nombre')"
+                        oninput="setCustomValidity('')">
+                    </div>
+                    <div class="mb-3">
+                      <label for="last name" class="col-form-label">Apellidos Usuario :</label>
+                      <input id="last name" placeholder="Digite sus apellidos" type="text" class="form-control"
+                        id="recipient-last names" required autocomplete="off" oninvalid="setCustomValidity('Digite sus apellidos')"
+                        oninput="setCustomValidity('')">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email Usuario:</label>
+                        <input id="email" placeholder="Digite un correo electrónico" type="email" class="form-control"
+                          id="recipient-email" required autocomplete="off" oninvalid="setCustomValidity('Digite un correo electrónico')"
+                          oninput="setCustomValidity('')">
+                      </div>
+                    <div class="mb-3">
+                      <label for="password" class="col-form-label">Contraseña Usuario :</label>
+                      <input id="password" placeholder="Digite la contraseña" type="password" pattern=".{6,}" class="form-control"
+                        id="recipient-password" required autocomplete="off" oninvalid="setCustomValidity('Digite la contraseña')"
+                        oninput="setCustomValidity('')">
+                    </div>
+                    <div class="mb-3">
+                        <label for="state" class="col-form-label">Estado Usuario :</label>
+                        <input id="state" placeholder="Digite el estado" type="number" min="0" max="1" class="form-control"
+                          id="recipient-state" required autocomplete="off" oninvalid="setCustomValidity('Digite el estado')"
+                          oninput="setCustomValidity('')">
+                      </div>  
+                      <div class="mb-3">
+                        <label for="roles_id users" class="col-form-label">Roles Usuario :</label>
+                        <input id="roles_id users" placeholder="Digite el id del rol" type="number" min="1" max="2" class="form-control"
+                          id="recipient-roles_id users" required autocomplete="off" oninvalid="setCustomValidity('Digite el id del rol')"
+                          oninput="setCustomValidity('')">
+                      </div>         
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                  </form>
+                </div>
+        
+              </div>
+            </div>
+          </div>
+        
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+          <script src="js/alertify.min.js"></script>
+          <script src="js/users.js"></script>
+      
+    </body>
+    <footer class="grid-container">
+      <div class="item">
+          Editores: Diana Gil-Vargas, Erasmo Martinez, Ricardo Ortega, Luis Ruiz, Leidy Valderrama & Jorge Hernandez<br>
+          ©2021. All Rights Reserved
+      </div>
+  </footer>
+</html>
